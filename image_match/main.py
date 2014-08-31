@@ -1,6 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+__author__ = 'jiaqianghuai'
+__version__ = '0.2.08.31'
+__description__ ='upload this code'
+
+
 import os
 import time
 from datetime import datetime
