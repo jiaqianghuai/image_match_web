@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-2014/08/04 jiaqianghuai: fix the code
+2014/08/31 jiaqianghuai: fix the code
 """
 
-__author__ = 'hzjiaqianghuai,hzsunshx'
-__version__ = '0.2.08.04'
+__author__ = 'jiaqianghuai'
+__version__ = '0.2.08.31'
 __description__ ='fix the code'
 
 import os
