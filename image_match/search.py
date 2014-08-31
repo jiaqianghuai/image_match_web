@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-2014/08/18 jiaqianghuai: create this code
+2014/08/31 jiaqianghuai: create this code
 """
 
-__author__ = 'hzjiaqianghuai'
-__version__ = '0.0.08.18'
+__author__ = 'jiaqianghuai'
+__version__ = '0.0.08.31'
 __description__ ='create this code'
 
 import os
