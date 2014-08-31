@@ -1,0 +1,21 @@
+<!-- extend base layout -->
+{% extends "index.html" %}
+
+{% block content %}
+    <br />
+    <hr />
+    Match Average Time: {{match_time}}<br />
+        <form action="feedback" method="post" enctype="multipart/form-data">
+            <div class="margin">
+            {% for image in Img_List %}
+                <img src="{{image}}" title="{{image}}" 
+                                    align="top" width="450" height="300" />
+                <label for="err">Match_Error</label>   
+                <input type="checkbox" name="Match_Err" value="{{image}}" id="err" />
+            {% endfor %}
+            </div>            
+            <div class="content"><input type="submit" value="Feedback" 
+                    style="background:rgb(255,255,255); color:#000000; width:75px; 
+                    height:30px; margin: 5px" /></div>
+        </form>
+{% endblock %}

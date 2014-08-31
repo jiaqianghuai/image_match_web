@@ -1,0 +1,18 @@
+﻿<!-- extend base layout -->
+{% extends "index.html" %}
+
+{% block content %}
+        <br />
+        <hr />
+        Center Point: {{center}}<br />
+        Match Time: {{match_time}}<br />
+        <div class="content">
+            <img src="{{ img }}" width="720" height="540"/><br />
+            <form action="feedback" method="post" enctype="multipart/form-data">
+                <label for="err">Match_Error</label>   
+                <input type="checkbox" name="Match_Err" value="{{img}}" id="err"/><br />
+                <input type="submit" value="Feedback" style="background:rgb(255,255,255);
+                color:#000000; width:75px; height:30px; margin: 5px" />
+            </form>
+        </div>
+{% endblock %}

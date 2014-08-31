@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Image Match</title>
+        <style>
+            .content{text-align:center}
+            .margin{margin:60px}
+            .border-style{text-align:center; background:rgb(255,255,255);
+                            color:#000000; width:75px; height:30px}
+        </style>
+        <link rel="stylesheet" href="static/css/styles.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
+		<script type="text/javascript" src="static/js/jquery.filedrop.js"></script>
+        <script type="text/javascript" src="static/js/upload.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function closeWin(){  
+            window.opener=null;  
+            window.open('','_self','');  
+            window.close();  
+        }  
+        </script>
+        <a onclick="closeWin()" href="#">logout</a> 
+        <div class="content"><img src="static/img/netease_logo.jpg" title="netease_logo" /></div>      
+		<div id="dropbox">
+			<span class="message">Drop template image and target image here to upload.</span>
+		</div>
+        <div class="content">
+            <form action="match" method="get" enctype="multipart/form-data"> 
+                <input type="submit" value=" Netease 识别" style="background:rgb(48,108,182);
+                color:#FFFFFF; width:100px; height:30px" />
+            </form>
+        </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>
+
